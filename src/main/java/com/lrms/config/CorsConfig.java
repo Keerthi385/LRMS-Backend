@@ -19,7 +19,7 @@ public class CorsConfig {
                 new CorsConfiguration();
 
         config.setAllowedOrigins(
-                List.of("http://localhost:5173"));
+                List.of("http://localhost:5173", "https://lrms-frontend.vercel.app"));
 
         config.setAllowedMethods(
                 List.of("*"));
