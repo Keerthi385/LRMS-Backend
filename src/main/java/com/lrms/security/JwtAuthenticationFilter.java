@@ -37,6 +37,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter{
 		System.out.println("JWT Filter Executed");
 		
 		String authHeader = req.getHeader("Authorization");
+		System.out.println("Authorization Header = " + authHeader);
 		
 		if(authHeader == null || !authHeader.startsWith("Bearer ")) {
 			filterChain.doFilter(req, res);
